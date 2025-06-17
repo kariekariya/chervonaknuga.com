@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Червона книга України</title>
+    <style>
+        body {
+            background-color: #add8e6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        h1 {
+            color: #b22222;
+            transition: color 0.3s ease;
+        }
+        h1:hover {
+            color: #ff4500;
+        }
+        .hover-text:hover {
+            color: blue;
+            font-weight: bold;
+        }
+        .embroidery {
+            width: 100%;
+            height: 100px;
+            background-image: url('https://www.creativefabrica.com/product/natural-floral-border/');
+            background-repeat: repeat-x;
+            background-size: contain;
+        }
+        .species-card img {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .book-image {
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+        }
+        .gallery img {
+            width: 150px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        .dark-mode {
+            background-color: #2f4f4f;
+            color: white;
+        }
+        #search {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #b22222;
+        }
+    </style>
+</head>
+<body>
+    <div class="embroidery"></div>
+
+    <header>
+        <h1>Червона книга України</h1>
+        <button onclick="toggleTheme()">Змінити тему</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">Про книгу</a></li>
+            <li><a href="#history">Історія</a></li>
+            <li><a href="#species">Види</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>Що таке Червона книга?</h2>
+        <p class="hover-text">Червона книга України містить інформацію про рідкісні та зникаючі види флори та фауни.</p>
+        <img class="book-image" src="https://fs04.vseosvita.ua/0401yn2y-ce5f-1200x630.jpg" alt="Червона книга України">
+    </section>
+    <section id="history">
+        <h2>Історія створення</h2>
+        <p>Червона книга України була започаткована в 1980 році та періодично оновлюється. Вона включає понад 800 видів рослин і тварин, що потребують охорони.</p>
+	<a href="червонакнига.html">
+    <button style="background-color: #b22222; color: white; padding: 10px; border-radius: 5px; font-size: 16px; border: none;">
+        Дізнатися більше про Червону книгу
+    </button>
+</a>
+
+    </section>
+    <section id="species">
+        <h2>Зникаючі види</h2>
+        <input type="text" id="search" placeholder="Введіть назву виду..." onkeyup="searchSpecies()">
+        <div id="species-list">
+            <div class="species-card">
+                <img src="https://th.bing.com/th/id/OIP.tvswqRmUrQ61uGaq4tz2XQHaEo?r=0&w=1920&h=1200&rs=1&pid=ImgDetMain" alt="Рись">
+                <p>Рись – рідкісний хижак, що знаходиться під охороною.</p>
+            </div>
+            <div class="species-card">
+                <img src="https://th.bing.com/th/id/R.1f6b4196128b50888a3b1b4144ce850a?rik=FT4ccx10R0eliA&pid=ImgRaw&r=0" alt="Чорний лелека">
+                <p>Чорний лелека – елегантний птах, що мешкає у лісах України.</p>
+            </div>
+	    <div class="species-card">
+                <img src="https://th.bing.com/th/id/OIP.6WRkUv1MoSdsb3m2Zi6HMQHaFg?r=0&rs=1&pid=ImgDetMain" alt="Гадюка Степова">
+                <p>Степова гадюка — типовий мешканець рівнинних і гірських полинових степів.</p>
+            </div>
+	    <div class="species-card">
+                <img src="https://th.bing.com/th/id/R.e281bf43811857782da9c5dbaeeefb91?rik=SW%2fWdggihge3oA&pid=ImgRaw&r=0" alt="Горностай">
+		<img src="https://th.bing.com/th/id/OIP.RMOh2o8bC32EHauWwAVgOwHaGQ?r=0&rs=1&pid=ImgDetMain" alt="Горностай">
+                <p>Горностай — маленький хутровий хижак .</p>
+            </div>
+	    <div class="species-card">
+                <img src="https://th.bing.com/th/id/OIP.2sphIW7yMVQ1pP-OF6HEJgHaEl?r=0&rs=1&pid=ImgDetMain" alt="Соня Садова">
+                <p>Соня Садова(або ж Жолудиця Європейська) — дрібний гризун, який мешкає в Європі та деяких островах Середземного моря .</p>
+            </div>
+	     <div class="species-card">
+                <img src="https://www.poznavayka.org/wp-content/uploads/2017/10/Seryiy-filin.jpg" alt="Пугач Сірий">
+                <p>Пугач Сірий — вид птахів з роду пугач (Bubo) родини совових .</p>
+            </div>
+	   <div class="species-card">
+                <img src="https://th.bing.com/th/id/OIP.VyrnWEldzdegXFk8rqppegHaEc?r=0&rs=1&pid=ImgDetMain" alt="Бабак Степовий">
+                <p>Бабак Лісовий — належить до роду Вивіркових й відомий під назвою Байбак .</p>
+            </div>
+	    <div class="species-card">
+                <img src="https://pofoto.club/uploads/posts/2022-09/1663411466_12-pofoto-club-p-yevropeiskii-zubr-18.jpg" alt="Зубр Європейський">
+                <p>Зубр Європейський — європейський вид роду бізонів роду бикових .</p>
+            </div>
+	    <div class="species-card">
+                <img src="https://th.bing.com/th/id/R.09072cd383b35330ea50133df2f579c7?rik=Xbk5iuAO%2fuNrtg&pid=ImgRaw&r=0" alt="Кажан підковонос великий">
+                <p>Кажан підковонос великий —  європейський кажан, що має статус рідкісного виду в Україні та занесений до Червоної книги в 2009 році .</p>
+            </div>
+    	    <div class="species-card">
+                <img src="https://th.bing.com/th/id/OIP.pytiN2J0hRn8drDwhhODSAHaEI?r=0&rs=1&pid=ImgDetMain" alt="Дельфін Афаліна">
+                <p> Дельфін Афаліна —  вид ссавців родини дельфінових, один з трьох видів роду Афаліна.</p>
+            </div>
+    </section>
+    <section id="gallery">
+        <h2>Галерея зникаючих видів</h2>
+        <div class="gallery">
+            <img src="https://th.bing.com/th/id/OIP.DcdrcT1itDzw2-164UcJMgHaFj?r=0&rs=1&pid=ImgDetMain" alt="Беркут">
+            <img src="https://th.bing.com/th/id/R.cdf641833869f253d0c85acbee9e49bc?rik=GwIWgXVjSPTD%2bg&pid=ImgRaw&r=0" alt="Саламандра">
+            <img src="https://th.bing.com/th/id/OIP.shkRKBaKP6owfeL1rEnLGAHaEo?r=0&rs=1&pid=ImgDetMain" alt="Сова">
+	    <img src="https://tsikavi-fakty.com.ua/wp-content/uploads/2020/03/2a06569f2a5f3b00592445e12d754274.jpg" alt="Дряхва">
+	    <img src="https://th.bing.com/th/id/OIP.xbwh-CPY7FdWZAcm5jnD9wHaFO?r=0&rs=1&pid=ImgDetMain" alt="Європейська норка">
+	    <img src="https://th.bing.com/th/id/R.8876e261425795252c98fa57ed6064c6?rik=14RoLIB4VLZ1YA&pid=ImgRaw&r=0" alt="Тюлень Монах">
+        </div>
+    </section>
+	<section id="contact">
+    <h2>Контакти</h2>
+    <p>Якщо у вас є питання або пропозиції, зв’яжіться з нами:</p>
+    <ul>
+        <li>Email: <a href="mailto:info@redbook.ua">someonexd@gmail.com</a></li>
+        <li>Телефон: +380 44 444 4444</li>
+        <li>Адреса: вул. Природозахисна, 11, Вінниця, Україна</li>
+    </ul>
+    <h3>Зворотний зв’язок</h3>
+    <form>
+        <label for="name">Ім’я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Надіслати</button>
+    </form>
+</section>
+
+
+    <div class="embroidery"></div>
+
+    <footer>
+        <p>&copy; 2025 Червона книга України</p>
+	<audio autoplay loop>
+    <source src="https://www.chosic.com/download-audio/59624/" type="audio/mpeg">
+</audio>
+
+    </footer>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        function searchSpecies() {
+            let input = document.getElementById('search').value.toLowerCase();
+            let speciesCards = document.querySelectorAll('.species-card');
+
+            speciesCards.forEach(card => {
+                let text = card.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
